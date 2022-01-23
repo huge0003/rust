@@ -46,9 +46,7 @@
                 <div class="col">
                     <select class="js-example-basic-multiple-limit" style="width: 100%" name="search"
                             multiple="multiple">
-                        @foreach($plants as $plant)
-                            <option>{{$plant->name}}</option>
-                        @endforeach
+
                     </select>
                 </div>
                 <div class="col-auto">
@@ -70,27 +68,27 @@
                     <select name="type" class="form-select select2-search-controller custom-select"> <!-- hardcoded -->
                         <option value="" selected disabled hidden></option>
                         <option value="Vezelgewassen"
-                                @if(isset($data['type']) && $data['type'] == 'Vezelgewassen') selected @endif>
+{{--                                @if(isset($data['type']) && $data['type'] == 'Vezelgewassen') selected @endif>--}}
                             Vezelgewassen
                         </option>
                         <option value="Oliehoudend"
-                                @if(isset($data['type']) && $data['type'] == 'Oliehoudend') selected @endif>Oliehoudend
+{{--                                @if(isset($data['type']) && $data['type'] == 'Oliehoudend') selected @endif>Oliehoudend--}}
                         </option>
                         <option value="Knolgewassen"
-                                @if(isset($data['type']) && $data['type'] == 'Knolgewassen') selected @endif>
+{{--                                @if(isset($data['type']) && $data['type'] == 'Knolgewassen') selected @endif>--}}
                             Knolgewassen
                         </option>
                         <option value="Veevoer"
-                                @if(isset($data['type']) && $data['type'] == 'Veevoer') selected @endif>Veevoer
+{{--                                @if(isset($data['type']) && $data['type'] == 'Veevoer') selected @endif>Veevoer--}}
                         </option>
                         <option value="Biociden"
-                                @if(isset($data['type']) && $data['type'] == 'Biociden') selected @endif>Biociden
+{{--                                @if(isset($data['type']) && $data['type'] == 'Biociden') selected @endif>Biociden--}}
                         </option>
                         <option value="Newfood"
-                                @if(isset($data['type']) && $data['type'] == 'Newfood') selected @endif>Newfood
+{{--                                @if(isset($data['type']) && $data['type'] == 'Newfood') selected @endif>Newfood--}}
                         </option>
                         <option value="Kleurstoffen"
-                                @if(isset($data['type']) && $data['type'] == 'Kleurstoffen') selected @endif>
+{{--                                @if(isset($data['type']) && $data['type'] == 'Kleurstoffen') selected @endif>--}}
                             Kleurstoffen
                         </option>
                     </select>
@@ -130,11 +128,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($filter_plants as $plant)
+{{--                @foreach($filter_plants as $plant)--}}
                     <tr>
-                    <!-- <td>{{ $plant->name }}</td> -->
-                        <td><a href="{{URL::to("/show/".$plant->id)}}">{{ $plant->name }}</a></td>
-                        <td>{{ $plant->type }}</td>
+{{--                    <!-- <td>{{ $plant->name }}</td> -->--}}
+{{--                        <td><a href="{{URL::to("/show/".$plant->id)}}">{{ $plant->name }}</a></td>--}}
+{{--                        <td>{{ $plant->type }}</td>--}}
                     </tr>
                 @endforeach
                 </tbody>

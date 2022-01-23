@@ -20,7 +20,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ URL::to('/') }}">BioBased Producten</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{ $plants->name }}</li>
+{{--                        <li class="breadcrumb-item active" aria-current="page">{{ $plants->name }}</li>--}}
                     </ol>
                 </nav>
             </div>
@@ -50,11 +50,11 @@
                     <tbody>
                         <tr>
                             <th>Naam</th>
-                            <td>{{ $plants->name }}</td>
+{{--                            <td>{{ $plants->name }}</td>--}}
                         </tr>
                         <tr>
                             <th>Type</th>
-                            <td>{{ $plants->type }}</td>
+{{--                            <td>{{ $plants->type }}</td>--}}
                         </tr>
                         <tr>
                             <th>Ingrediënten</th>
